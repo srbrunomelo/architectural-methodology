@@ -1,5 +1,5 @@
 "use client";
-import { Each } from "@/shared/ui/components";
+import { Each } from "@/shared/ui/component";
 
 import { Product } from "@/entities/product/model";
 import { ProductCard } from "@/entities/product/ui";

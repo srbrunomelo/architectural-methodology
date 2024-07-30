@@ -1,5 +1,5 @@
-import { IF } from "@/shared/ui/components";
-import { LoveIcon, TrashIcon } from "@/shared/ui/icons";
+import { IF } from "@/shared/ui/component";
+import { LoveIcon, TrashIcon } from "@/shared/ui/icon";
 
 type ProductActionsProps = {
   id: string;
