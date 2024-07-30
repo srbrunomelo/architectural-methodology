@@ -1,5 +1,5 @@
-import { Product } from "@/entities/products/model/";
-import IF from "@/shared/ui/components/if";
+import { Product } from "@/entities/product/model";
+import { IF } from "@/shared/ui/components";
 
 type ProductCardProps = {
   product: Product;

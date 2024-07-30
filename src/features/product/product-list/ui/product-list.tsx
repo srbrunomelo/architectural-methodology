@@ -1,16 +1,17 @@
 "use client";
-
-import { Product } from "@/entities/products/model";
-import ProductCard from "@/entities/products/ui/product-card";
 import { Each } from "@/shared/ui/components";
-import useFavoriteProducts from "@/features/products/model/use-favorite-products";
+
+import { Product } from "@/entities/product/model";
+import { ProductCard } from "@/entities/product/ui";
+
+import { useProductFavorite } from "@/features/product/product-favorite/model";
 
 type ProductListProps = {
   data: Product[];
 };
 
 function ProductList({ data }: ProductListProps) {
-  const { addFavorite, removeFavorite, isFavorite } = useFavoriteProducts();
+  const { addFavorite, removeFavorite, isFavorite } = useProductFavorite();
 
   return (
     <div className="flex flex-col max-w-3xl p-6 space-y-4 sm:p-10 dark:bg-gray-900 dark:text-gray-100">

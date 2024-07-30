@@ -1,9 +1,11 @@
 import dynamic from "next/dynamic";
-import { productList } from "@/entities/products/api/product-list";
+import { productList } from "@/entities/product/api";
 
 // https://nextjs.org/docs/app/building-your-application/optimizing/lazy-loading#skipping-ssr
+// https://nextjs.org/docs/messages/react-hydration-error
+
 const ProductList = dynamic(
-  () => import("@/features/products/ui/product-list"),
+  () => import("@/features/product/product-list/ui/product-list"),
   { ssr: false }
 );
 

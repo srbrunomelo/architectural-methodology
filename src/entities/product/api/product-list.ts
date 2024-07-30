@@ -1,5 +1,5 @@
-import { HTTPRequest } from "@/app/adapters/";
-import { productListReturn } from "@/entities/products/model/types";
+import { HTTPRequest } from "@/app/adapters";
+import { productListReturn } from "@/entities/product/model/types";
 
 export async function productList(): Promise<productListReturn> {
   try {

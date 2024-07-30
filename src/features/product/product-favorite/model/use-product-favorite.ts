@@ -11,7 +11,7 @@ type FavoriteProductsState = {
   favorites: string[];
 };
 
-const useFavoriteProducts = create<
+const useProductFavorite = create<
   FavoriteProductsActions & FavoriteProductsState
 >()(
   //@ts-ignore
@@ -47,4 +47,4 @@ const useFavoriteProducts = create<
   )
 );
 
-export default useFavoriteProducts;
+export default useProductFavorite;
